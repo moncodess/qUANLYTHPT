@@ -1,0 +1,35 @@
+﻿@model qUANLYTHPT.Areas.Admin.Models.Student
+
+<h2>Thêm Học Sinh</h2>
+
+<form asp-action="ThemHS">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="FullName" class="control-label"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Hometown" class="control-label"></label>
+        <input asp-for="Hometown" class="form-control" />
+        <span asp-validation-for="Hometown" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfBirth" class="control-label"></label>
+        <input asp-for="DateOfBirth" class="form-control" />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ClassId" class="control-label"></label>
+        <select asp-for="ClassId" class="form-control" asp-items="@(ViewBag.Classes as SelectList)"></select>
+        <span asp-validation-for="ClassId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Thêm" class="btn btn-default" />
+    </div>
+</form>

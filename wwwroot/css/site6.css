@@ -1,0 +1,65 @@
+﻿<style type="text/css" id="wp-custom-css" >
+.owl-carousel .owl-item img {
+    display: none;
+}
+
+.form-submit input[type=submit] {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    font-family: inherit;
+}
+
+span {
+    font-family: inherit;
+}
+
+p.embedpress-el-powered {
+    display: none;
+}
+
+figcaption.wp-element-caption {
+    text-align: center;
+}
+
+.menu-wrap, .menu-main {
+    background-color: #fff;
+}
+
+.header-wrap {
+    background-color: #ff963ef2;
+}
+
+.menu-wrap .search-button.activated, .menu-wrap a.browse-more.activated, .menu-wrap a.mobile-menu-button.activated, .menu-main > li.current_page_item > a, .menu-main > li.current_page_ancestor > a, .menu-main > li.current-menu-item > a, .menu-main > li.current-menu-ancestor > a {
+    color: #bb641b;
+}
+
+.menu-main > li > a, .menu-wrap a.search-button, .menu-wrap a.browse-more, .menu-wrap a.mobile-menu-button, .menu-wrap .search-field {
+    color: #0739a5;
+}
+
+.menu-main .sub-menu {
+    border-width: 2px;
+    border-color: #e1e1e1;
+    border-radius: 5px;
+}
+
+.menu-main li:hover .sub-menu, .mobile-menu .sub-menu a, .menu-main ul {
+    background-color: #003870;
+}
+
+section.footer-widgets.builder.mini-disabled.clearfix {
+    background-color: #003870;
+}
+
+.sm-container.mini-disabled, .top.mini-disabled, .top.mini-disabled.logo-image, .menu-wrap.mini-disabled, .container.mini-disabled, .footer-wrap.mini-disabled {
+    max-width: 100%;
+}
+
+.wp-block-file__button {
+    background: #cd2138;
+    padding: 10px;
+}
+/* html {filter:grayscale(100%);} */ </style >

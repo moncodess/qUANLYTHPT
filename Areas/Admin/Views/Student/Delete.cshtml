@@ -1,0 +1,16 @@
+﻿@model qUANLYTHPT.Areas.Admin.Models.Student
+
+<h2>Xóa Học Sinh</h2>
+
+<p>Bạn có chắc chắn muốn xóa học sinh này?</p>
+<p>Họ và tên: @Model.FullName</p>
+<p>Email: @Model.Email</p>
+<p>Quê quán: @Model.Hometown</p>
+<p>Ngày sinh: @Model.DateOfBirth.ToString("dd/MM/yyyy")</p>
+<p>Lớp: @Model.Class.ClassName</p>
+
+<form asp-action="XoaHS">
+    <input type="hidden" asp-for="StudentId" />
+    <input type="submit" value="Xóa" class="btn btn-danger" />
+    <a asp-action="DanhSach" class="btn btn-default">Quay lại</a>
+</form>

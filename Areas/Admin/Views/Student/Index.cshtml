@@ -1,0 +1,33 @@
+﻿@model IEnumerable<qUANLYTHPT.Areas.Admin.Models.Student>
+
+<h2>Danh Sách Học Sinh</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Họ và Tên</th>
+            <th>Email</th>
+            <th>Quê quán</th>
+            <th>Ngày sinh</th>
+            <th>Lớp</th>
+            <th>Điểm</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.StudentId</td>
+                <td>@student.FullName</td>
+                <td>@student.Email</td>
+                <td>@student.Hometown</td>
+                <td>@student.DateOfBirth.ToString("dd/MM/yyyy")</td>
+                <td>@student.Class.ClassName</td>
+                <td>
+                    <a asp-action="XemDiem" asp-route-id="@student.StudentId">Xem điểm</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+﻿.nav {
+    list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0; /* Loại bỏ khoảng cách padding */
+    margin: 0; /* Loại bỏ khoảng cách margin */
+    display: flex; /* Hiển thị các phần tử con theo hàng ngang */
+}
+
+.nav-item {
+    margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.nav-link {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #000; /* Màu chữ */
+    font-weight: bold; /* Chữ đậm */
+}
+
+    .nav-link:hover {
+        color: #007bff; /* Màu chữ khi hover */
+    }

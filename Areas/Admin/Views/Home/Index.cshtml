@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quản trị - Trang Chủ</title>
+
+    <!-- Font tùy chỉnh cho mẫu này -->
+    <link href="/Asset/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
+
+    <!-- Styles tùy chỉnh cho mẫu này -->
+    <link href="/Asset/Admin/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="_Layout.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class=""></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Admin <sup></sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Trang Chủ -->
+            <li class="nav-item active">
+                <a class="nav-link" href="_Layout.html">
+                    <span>Trang Chủ</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">Quản lý</div>
+
+            <!-- Nav Item - Học Sinh -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStudents" aria-expanded="true" aria-controls="collapseStudents">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Học Sinh</span>
+                </a>
+                <div id="collapseStudents" class="collapse" aria-labelledby="headingStudents" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tùy Chọn:</h6>
+                        <a class="collapse-item" href="@Url.Action("Index", "Student", new { area = "Admin" })">Danh Sách Học Sinh</a>
+                        <a class="collapse-item" href="@Url.Action("Edit", "Student", new { area = "Admin" })">Sửa Học Sinh</a>
+                        <a class="collapse-item" href="@Url.Action("Create", "Student", new { area = "Admin" })">Thêm Học Sinh</a>
+                        <a class="collapse-item" href="@Url.Action("Delete", "Student", new { area = "Admin" })">Xoa Học Sinh</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Giáo Viên -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTeachers" aria-expanded="true" aria-controls="collapseTeachers">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Giáo Viên</span>
+                </a>
+                <div id="collapseTeachers" class="collapse" aria-labelledby="headingTeachers" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tùy Chọn:</h6>
+                        <a class="collapse-item" href="@Url.Action("Index", "Teacher", new { area = "Admin" })">Danh Sách</a>
+                        <a class="collapse-item" href="@Url.Action("Index", "Teacher", new { area = "Admin" })">Thêm Giáo Viên</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">Addons</div>
+
+            <!-- Nav Item - Quản Lý Tài Khoản -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccountManagement" aria-expanded="true" aria-controls="collapseAccountManagement">
+                    <i class="fas fa-fw fa-user-circle"></i>
+                    <span>Quản Lý Tài Khoản</span>
+                </a>
+                <div id="collapseAccountManagement" class="collapse" aria-labelledby="headingAccountManagement" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Đăng Nhập:</h6>
+                        <a class="collapse-item" href="dangkytkgiaovien.html">Đăng Ký</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Tải Điểm -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Tải Điểm</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Tải Danh Sách Học Sinh -->
+            <li class="nav-item">
+                <a class="nav-link" href="taidiem.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tải Danh Sách Học Sinh</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Tìm kiếm...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Thông Tin Người Dùng -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">@ViewBag.UserName</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg" alt="...">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Hồ Sơ
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Đăng Xuất
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-center mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 text-center">Bảng Điều Khiển</h1>
+                    </div>
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4">
+                            <!-- End of Page Content -->
+
+                        </div>
+                        <!-- End of Main Content -->
+                        <!-- Footer -->
+                        <footer class="bg-white footer">
+                            <div class="container my-auto">
+                                <div class="text-center my-auto copyright">
+                                    <span>© Quang Tuyến Media 2024</span>
+                                </div>
+                            </div>
+                        </footer>
+                        <!-- End of Footer -->
+
+                    </div>
+                    <!-- End of Content Wrapper -->
+
+                </div>
+                <!-- End of Page Wrapper -->
+                <!-- JavaScript chính của Bootstrap -->
+                <script src="/Asset/Admin/vendor/jquery/jquery.min.js"></script>
+                <script src="/Asset/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+                <!-- JavaScript plugin chính -->
+                <script src="/Asset/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+                <!-- Script tùy chỉnh cho tất cả các trang -->
+                <script src="/Asset/Admin/js/sb-admin-2.min.js"></script>
+</body>
+
+</html>
